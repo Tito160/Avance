@@ -1,0 +1,79 @@
+body {
+    margin-left: 20px;
+    border-style: dotted;
+    background-color: coral;
+    border-color: yellow;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin: 20px;
+}
+p {
+    margin: 20px;
+}
+
+video {
+    width: 300px;
+    height: 500px;
+    margin: 20px;    
+}
+
+#especial {
+    animation: auraGlow 6s infinite alternate;
+}
+
+@keyframes auraGlow {
+    0% {
+        color: white;
+        text-shadow:
+            0 0 10px white,
+            0 0 20px #87cefa,
+            0 0 30px #9370db;
+    }
+
+    20% {
+        color: #d3d3d3;
+        /* plateado claro */
+        text-shadow:
+            0 0 10px #d3d3d3,
+            0 0 20px #87cefa,
+            0 0 30px #0066cc;
+    }
+
+    40% {
+        color: #87cefa;
+        /* celeste */
+        text-shadow:
+            0 0 10px #87cefa,
+            0 0 20px #0066cc,
+            0 0 30px #9370db;
+    }
+
+    60% {
+        color: #0066cc;
+        /* azul intenso */
+        text-shadow:
+            0 0 10px #0066cc,
+            0 0 20px #9370db,
+            0 0 30px #696969;
+    }
+
+    80% {
+        color: #9370db;
+        /* púrpura */
+        text-shadow:
+            0 0 10px #9370db,
+            0 0 20px #696969,
+            0 0 30px white;
+    }
+
+    100% {
+        color: white;
+        text-shadow:
+            0 0 10px white,
+            0 0 20px #87cefa,
+            0 0 30px #9370db;
+    }
+}
