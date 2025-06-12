@@ -1,9 +1,25 @@
 body {
-    margin-left: 20px;
     border-style: dotted;
-    background-color: coral;
-    border-color: yellow;
+    border-color: black;
+    background-color: lightskyblue;
 }
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-fondo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que cubra sin deformar */
+}
+
 h1 {
     text-align: center;
 }
@@ -76,4 +92,7 @@ video {
             0 0 20px #87cefa,
             0 0 30px #9370db;
     }
+}
+#Subrayado{
+    text-decoration: underline;
 }
